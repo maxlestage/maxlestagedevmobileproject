@@ -6,7 +6,7 @@ import kotlin.concurrent.thread
 
 class MoviesViewModel: ViewModel() {
 
-    var movie = MutableLiveData<MoviesBean?>()
+    var movie = MutableLiveData<MovieBean?>()
     var errorMessage = MutableLiveData("")
 
     //permet d'indiquer un thread en cours ou non

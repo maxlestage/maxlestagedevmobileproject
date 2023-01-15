@@ -12,9 +12,9 @@ object RequestUtils {
     val client = OkHttpClient()
     val gson = Gson()
 
-    fun loadMovie(movieName:String): WeatherBean {
+    fun loadMovie(movieName:String): MovieBean {
         var json = sendGet(URL_API_YTS.format(movieName))
-        return gson.fromJson(json, WeatherBean::class.java )
+        return gson.fromJson(json, MovieBean::class.java )
     }
 
 

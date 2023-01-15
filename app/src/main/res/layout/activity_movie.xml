@@ -8,6 +8,7 @@
     android:animateLayoutChanges="true"
     android:gravity="center"
     android:orientation="vertical"
+    android:id="@+id/activity_movies"
     tools:context=".MoviesActivity">
 
     <TextView
@@ -43,7 +44,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/ic_baseline_whatshot_24" />
+         />
 
         <TextView
             android:id="@+id/tvTemp"
@@ -67,7 +68,7 @@
             android:id="@+id/imageView3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/ic_baseline_flag_24" />
+          />
 
     </LinearLayout>
 

@@ -4,13 +4,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
-import com.example.maxlestagedevmobileproject.databinding.ActivityMoviesBinding
+import com.example.maxlestagedevmobileproject.databinding.ActivityMovieBinding
 import com.squareup.picasso.Picasso
 
 class MoviesActivity : AppCompatActivity() {
 
     //Instancie le XML à retardement (by lazy) plus exactement à la 1er utilisation
-    val binding by lazy { ActivityMoviesBinding.inflate(layoutInflater) }
+    val binding by lazy { ActivityMovieBinding.inflate(layoutInflater) }
     val model by lazy { ViewModelProvider(this).get(MoviesViewModel::class.java) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,7 @@ class MoviesActivity : AppCompatActivity() {
         observe()
 
         binding.btLoad.setOnClickListener {
-            model.loadData("")
+            model.loadData("AJOUT DU SERCH NAME")
         }
     }
 
